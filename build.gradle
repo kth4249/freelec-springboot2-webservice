@@ -38,5 +38,8 @@ dependencies {
 
     compile('com.h2database:h2')
 
+    // 머스태치 스타터 의존성 등록
+    compile('org.springframework.boot:spring-boot-starter-mustache')
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
