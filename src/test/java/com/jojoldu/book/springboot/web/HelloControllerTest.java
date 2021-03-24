@@ -34,6 +34,8 @@ public class HelloControllerTest {
     @Test
     // 이후 다시 구동시
     // IllegalArgumentException: JPA metamodel must not be empty! 에러 발생
+    // => 해당 에러는 @EnableJpaAuditing으로 인해 발생
+    // => @WebMvcTest다 보니 @Entity 클래스가 없어서 에러가 발생함
     public void hello가_리턴된다() throws Exception {
         String hello = "hello";
 
