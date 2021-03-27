@@ -47,6 +47,9 @@ dependencies {
     // 세션 저장소 사용을 위한 의존성 추가
     compile('org.springframework.session:spring-session-jdbc')
 
+    // MariaDB 드라이버 추가
+    compile('org.mariadb.jdbc:mariadb-java-client')
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
     // 스프링 시큐리티 테스트
